@@ -1,0 +1,766 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>احصائيات التقرير السنوي لقسم الأحياء للعام الجامعي 1447هـ</title>
+<meta name="description" content="إعداد د. نوره محمد العبود">
+<meta property="og:title" content="احصائيات التقرير السنوي لقسم الأحياء للعام الجامعي 1447هـ">
+<meta property="og:description" content="إعداد د. نوره محمد العبود">
+<meta property="og:type" content="website">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  color-scheme: light;
+  --bg:#f4f6f5;
+  --surface:#fcfcfb;
+  --surface-2:#eef2f1;
+  --border:#dde3e1;
+  --grid:#e6eae9;
+  --ink:#10201f;
+  --ink-2:#4a5856;
+  --ink-3:#6f7b79;
+  --brand:#0b5f6b;
+  --brand-ink:#ffffff;
+  --gold:#a77a24;
+  --s1:#0085a0;   /* teal  - validated light */
+  --s2:#b07d1e;   /* gold  */
+  --s3:#6a5acd;   /* violet */
+  --target:#c0392b;
+  --warn-bg:#fbf3e2; --warn-ink:#7a5410; --warn-line:#e7cf9c;
+  --shadow:0 1px 2px rgba(16,32,31,.05),0 4px 16px rgba(16,32,31,.04);
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    color-scheme: dark;
+    --bg:#121615; --surface:#1a1a19; --surface-2:#222827; --border:#2e3634; --grid:#2a302f;
+    --ink:#eef1f0; --ink-2:#b9c2c0; --ink-3:#8d9896;
+    --brand:#0f6f7c; --gold:#d3a54d;
+    --s1:#1ea5b5; --s2:#b8892c; --s3:#9085e9; --target:#ef6b5c;
+    --warn-bg:#2b2416; --warn-ink:#e8c886; --warn-line:#5a4720;
+    --shadow:none;
+  }
+}
+:root[data-theme="dark"]{
+  color-scheme: dark;
+  --bg:#121615; --surface:#1a1a19; --surface-2:#222827; --border:#2e3634; --grid:#2a302f;
+  --ink:#eef1f0; --ink-2:#b9c2c0; --ink-3:#8d9896;
+  --brand:#0f6f7c; --gold:#d3a54d;
+  --s1:#1ea5b5; --s2:#b8892c; --s3:#9085e9; --target:#ef6b5c;
+  --warn-bg:#2b2416; --warn-ink:#e8c886; --warn-line:#5a4720;
+  --shadow:none;
+}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--ink);
+  font-family:"IBM Plex Sans Arabic",system-ui,"Segoe UI",Tahoma,sans-serif;font-size:15px;line-height:1.65}
+.num{font-variant-numeric:tabular-nums}
+.wrap{max-width:1180px;margin:0 auto;padding:0 16px}
+
+/* header */
+header.top{background:var(--brand);color:var(--brand-ink);position:relative;overflow:hidden}
+header.top::after{content:"";position:absolute;inset:auto 0 0 0;height:6px;background:var(--gold)}
+.top .wrap{padding-top:40px;padding-bottom:42px}
+.eyebrow{font-size:13px;letter-spacing:.02em;opacity:.85;margin:0 0 6px}
+h1{font-size:clamp(24px,4vw,36px);line-height:1.3;margin:0 0 12px;font-weight:700;text-wrap:balance}
+.brand{display:flex;align-items:center;gap:22px}
+.brand .logo{width:120px;height:auto;flex:none}
+.brand-text{min-width:0;padding-inline-start:22px;border-inline-start:1px solid rgba(255,255,255,.28)}
+@media (max-width:560px){.brand{gap:14px}.brand .logo{width:68px}.brand-text{padding-inline-start:14px}}
+.byline{margin:0;font-size:16px;font-weight:500;opacity:.92}
+.meta{display:flex;flex-wrap:wrap;gap:8px 18px;margin-top:18px;font-size:13px;opacity:.85}
+
+html{scroll-padding-top:64px}
+nav.toc{position:sticky;top:0;z-index:5;background:color-mix(in srgb,var(--surface) 92%,transparent);
+  backdrop-filter:blur(8px);border-bottom:1px solid var(--border)}
+nav.toc .wrap{display:flex;gap:4px;overflow-x:auto;scrollbar-width:none;padding-top:8px;padding-bottom:8px}
+nav.toc a{flex:none;color:var(--ink-2);text-decoration:none;font-size:13.5px;padding:6px 12px;border-radius:999px;white-space:nowrap}
+nav.toc a:hover{background:var(--surface-2);color:var(--ink)}
+
+/* KPI */
+.kpis{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-top:24px;position:relative}
+.kpi{background:var(--surface);border:1px solid var(--border);border-radius:14px;padding:16px 18px 14px;box-shadow:var(--shadow)}
+.kpi .label{font-size:13px;color:var(--ink-2);margin:0}
+.kpi .value{font-size:34px;font-weight:700;line-height:1.15;margin:4px 0 2px;color:var(--ink)}
+.kpi .value small{font-size:16px;font-weight:600;color:var(--ink-2)}
+.kpi .sub{font-size:12.5px;color:var(--ink-3);margin:0}
+.kpi .delta{color:var(--s1);font-weight:600}
+.kpi .src{display:block;margin-top:8px;font-size:11px;color:var(--ink-3);border-top:1px dashed var(--border);padding-top:6px}
+
+section{padding:44px 0 4px}
+section>.wrap>h2{font-size:22px;margin:0 0 4px;font-weight:700;display:flex;align-items:center;gap:10px}
+section>.wrap>h2::before{content:"";width:6px;height:22px;border-radius:3px;background:var(--gold)}
+.sec-lede{color:var(--ink-2);margin:0 0 18px;max-width:820px}
+
+.grid{display:grid;gap:14px}
+.g2{grid-template-columns:repeat(2,minmax(0,1fr))}
+.g3{grid-template-columns:repeat(3,minmax(0,1fr))}
+.span2{grid-column:span 2}
+.card{background:var(--surface);border:1px solid var(--border);border-radius:14px;padding:18px 18px 12px;box-shadow:var(--shadow);min-width:0}
+.card h3{font-size:15.5px;margin:0 0 2px;font-weight:600}
+.card .hint{font-size:13px;color:var(--ink-2);margin:0 0 10px}
+.chart{width:100%;position:relative}
+.chart svg{display:block;width:100%;height:auto;overflow:visible;direction:ltr}
+.chart text{font-family:inherit;fill:var(--ink-2);font-size:12px}
+.chart .axis-label{fill:var(--ink-3);font-size:11.5px}
+.chart .val{fill:var(--ink);font-size:11.5px;font-weight:600}
+.legend{display:flex;flex-wrap:wrap;gap:6px 16px;font-size:12.5px;color:var(--ink-2);margin:2px 0 8px}
+.legend i{display:inline-block;width:10px;height:10px;border-radius:3px;margin-inline-end:6px;vertical-align:-1px}
+.legend .tgt i{height:0;border-top:2px dashed var(--target);border-radius:0;width:14px;vertical-align:3px}
+.foot{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;gap:6px 12px;margin-top:8px;padding-top:8px;border-top:1px dashed var(--border)}
+.src{font-size:11.5px;color:var(--ink-3)}
+details.tbl summary{cursor:pointer;font-size:12px;color:var(--brand);list-style:none}
+:root[data-theme="dark"] details.tbl summary{color:var(--s1)}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]) details.tbl summary{color:var(--s1)}}
+details.tbl summary::-webkit-details-marker{display:none}
+details.tbl[open]{flex-basis:100%}
+.tw{overflow-x:auto;margin-top:8px}
+table{border-collapse:collapse;width:100%;font-size:13px}
+th,td{padding:6px 8px;text-align:right;border-bottom:1px solid var(--border);white-space:nowrap}
+th{color:var(--ink-2);font-weight:600;background:var(--surface-2)}
+
+/* stat rows */
+.stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(130px,1fr));gap:10px}
+.stat{background:var(--surface-2);border-radius:10px;padding:12px 14px}
+.stat b{display:block;font-size:24px;line-height:1.2;font-weight:700}
+.stat span{font-size:12.5px;color:var(--ink-2)}
+.list{margin:0;padding:0;list-style:none}
+.list li{display:flex;justify-content:space-between;gap:12px;padding:8px 0;border-bottom:1px solid var(--border);font-size:14px}
+.list li:last-child{border-bottom:0}
+.list li span:last-child{color:var(--ink-2);white-space:nowrap}
+
+/* feature band */
+.feature{background:var(--surface);border:1px solid var(--border);border-inline-start:6px solid var(--gold);border-radius:14px;padding:18px 20px 12px;margin-bottom:14px;box-shadow:var(--shadow);display:grid;grid-template-columns:1.2fr 1fr;gap:12px 24px;align-items:center}
+.feature .tag{display:inline-block;font-size:12px;font-weight:600;color:var(--gold);margin-bottom:2px}
+.feature h3{margin:0 0 4px;font-size:17px}
+.feature p{margin:0;font-size:13.5px;color:var(--ink-2)}
+.feature-stats{display:grid;grid-template-columns:repeat(4,1fr);gap:8px}
+.feature-stats div{background:var(--surface-2);border-radius:10px;padding:10px 12px}
+.feature-stats b{display:block;font-size:24px;line-height:1.2;font-weight:700}
+.feature-stats span{font-size:12px;color:var(--ink-2)}
+.feature>.src{grid-column:1/-1;border-top:1px dashed var(--border);padding-top:8px}
+.pg-kpis{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}
+@media (max-width:980px){.feature{grid-template-columns:1fr}.pg-kpis{grid-template-columns:repeat(2,1fr)}}
+@media (max-width:520px){.feature-stats{grid-template-columns:repeat(2,1fr)}}
+/* gaps */
+.gaps{background:var(--warn-bg);border:1px solid var(--warn-line);border-radius:14px;padding:18px 20px;color:var(--warn-ink)}
+.gaps h3{margin:0 0 8px;font-size:16px;color:var(--warn-ink)}
+.gaps ol{margin:0;padding-inline-start:20px}
+.gaps li{margin:6px 0;font-size:14px;line-height:1.7}
+.gaps li b{font-weight:600}
+.flag{display:inline-block;font-size:11px;font-weight:600;padding:1px 8px;border-radius:999px;background:var(--warn-bg);color:var(--warn-ink);border:1px solid var(--warn-line);margin-inline-start:6px;vertical-align:2px}
+
+.sources{columns:2;column-gap:28px;font-size:13px;color:var(--ink-2);padding-inline-start:18px}
+.sources li{break-inside:avoid;margin:3px 0}
+footer{padding:36px 0 48px;color:var(--ink-3);font-size:12.5px}
+
+#tip{position:fixed;z-index:20;pointer-events:none;background:var(--ink);color:var(--surface);font-size:12.5px;
+  padding:8px 10px;border-radius:8px;line-height:1.5;opacity:0;transform:translateY(4px);transition:opacity .12s ease,transform .12s ease;max-width:260px;direction:rtl}
+#tip.on{opacity:1;transform:none}
+#tip .row{display:flex;justify-content:space-between;gap:14px}
+#tip i{display:inline-block;width:8px;height:8px;border-radius:2px;margin-inline-end:6px}
+.hit{fill:transparent;cursor:default}
+.bar{transition:opacity .15s ease}
+.chart:hover .bar{opacity:.55}
+.chart .bar.hot{opacity:1}
+
+@media (max-width:980px){.kpis{grid-template-columns:repeat(2,1fr)}.g3{grid-template-columns:1fr 1fr}}
+@media (max-width:720px){.g2,.g3{grid-template-columns:1fr}.span2{grid-column:auto}.sources{columns:1}.kpi .value{font-size:28px}}
+@media (prefers-reduced-motion:reduce){*{transition:none!important}}
+@media print{nav.toc{display:none}.card,.kpi{box-shadow:none;break-inside:avoid}body{background:#fff}}
+</style>
+</head>
+<body>
+
+<header class="top">
+  <div class="wrap">
+    <div class="brand">
+      <img class="logo" src="data:image/png;base64,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" alt="شعار جامعة أم القرى" width="320" height="276">
+      <div class="brand-text">
+        <h1>احصائيات التقرير السنوي لقسم الأحياء للعام الجامعي 1447هـ (2025/2026م)</h1>
+        <p class="byline">إعداد د. نوره محمد العبود</p>
+      </div>
+    </div>
+  </div>
+</header>
+
+<nav class="toc" aria-label="أقسام اللوحة"><div class="wrap">
+  <a href="#students">الطلبة</a><a href="#achievement">التحصيل</a><a href="#courses">المقررات</a><a href="#staff">المنسوبون</a>
+  <a href="#research">البحث العلمي</a><a href="#graduates">الخريجون</a><a href="#postgrad">الدراسات العليا</a><a href="#exam">الاختبار المعياري</a><a href="#surveys">رضا المستفيدين</a>
+  <a href="#activities">الأنشطة والإنجازات</a><a href="#sources">ملفات المصادر</a>
+</div></nav>
+
+<div class="wrap">
+  <div class="kpis" id="kpis"></div>
+</div>
+
+<!-- STUDENTS -->
+<section id="students"><div class="wrap">
+  <h2>الطلبة المسجلون</h2>
+  <p class="sec-lede">عاد إجمالي المسجلين إلى الارتفاع في 1447هـ بعد تراجع متواصل منذ 2022، مدفوعاً بزيادة المستجدين.</p>
+  <div class="grid g2">
+    <div class="card span2">
+      <h3>تطور أعداد المسجلين والمستجدين (2021–2026)</h3>
+      <p class="hint">العام 2026 يقابل العام الجامعي 1447هـ</p>
+      <div class="legend" data-for="c-enrol"></div>
+      <div class="chart" id="c-enrol"></div>
+      <div class="foot"><span class="src">المصدر: 08 - إحصائيات الطلبة المسجلين - جدول (1)</span><details class="tbl" data-for="c-enrol"><summary>عرض الجدول</summary></details></div>
+    </div>
+    <div class="card">
+      <h3>المنتظمون من دفعة 1447هـ بحسب البرنامج والمسار</h3>
+      <p class="hint">412 طالباً وطالبة منتظمين</p>
+      <div class="legend" data-for="c-prog"></div>
+      <div class="chart" id="c-prog"></div>
+      <div class="foot"><span class="src">المصدر: 08 - إحصائيات الطلبة المسجلين - جدول (3)</span><details class="tbl" data-for="c-prog"><summary>عرض الجدول</summary></details></div>
+    </div>
+    <div class="card">
+      <h3>طلبة دفعة 1447هـ بحسب حالة القيد</h3>
+      <p class="hint">524 طالباً وطالبة مقيدين، 78.6% منهم منتظمون</p>
+      <div class="legend" data-for="c-status"></div>
+      <div class="chart" id="c-status"></div>
+      <div class="foot"><span class="src">المصدر: 08 - إحصائيات الطلبة المسجلين - جدول (2)</span><details class="tbl" data-for="c-status"><summary>عرض الجدول</summary></details></div>
+    </div>
+  </div>
+</div></section>
+
+<!-- ACHIEVEMENT -->
+<section id="achievement"><div class="wrap">
+  <h2>التحصيل الأكاديمي</h2>
+  <p class="sec-lede">بلغت نسبة النجاح العامة 95.0% من 9662 مقعداً دراسياً (المقعد: تسجيل طالب واحد في مقرر واحد)، مع فارق واضح بين الطالبات (98.2%) والطلاب (89.6%).</p>
+  <div class="grid g2">
+    <div class="card">
+      <h3>نسبة النجاح بحسب الفصل والشطر</h3>
+      <p class="hint">المحور يبدأ من 80% لإظهار الفروق</p>
+      <div class="legend" data-for="c-pass"></div>
+      <div class="chart" id="c-pass"></div>
+      <div class="foot"><span class="src">المصدر: 10 - إحصائية تقديرات الطلاب والطالبات - جدول (1)</span><details class="tbl" data-for="c-pass"><summary>عرض الجدول</summary></details></div>
+    </div>
+    <div class="card">
+      <h3>توزيع التقديرات بحسب الشطر (%)</h3>
+      <p class="hint">نسبة كل تقدير من نتائج الشطر</p>
+      <div class="legend" data-for="c-grades"></div>
+      <div class="chart" id="c-grades"></div>
+      <div class="foot"><span class="src">المصدر: 10 - إحصائية تقديرات الطلاب والطالبات - جدول (2)</span><details class="tbl" data-for="c-grades"><summary>عرض الجدول</summary></details></div>
+    </div>
+  </div>
+</div></section>
+
+<!-- COURSES -->
+<section id="courses"><div class="wrap">
+  <h2>المقررات والشعب المطروحة</h2>
+  <p class="sec-lede">طرح القسم 155 مقرراً في 902 شعبة، 60.2% منها في شطر الطالبات.</p>
+  <div class="grid g2">
+    <div class="card">
+      <h3>الشعب المطروحة بحسب الفصل والشطر</h3>
+      <p class="hint">404 شعب في الأول، 421 في الثاني، 77 في الصيفي</p>
+      <div class="legend" data-for="c-sections"></div>
+      <div class="chart" id="c-sections"></div>
+      <div class="foot"><span class="src">المصدر: 09 - إحصائيات المقررات والشعب المطروحة - جدول (2)</span><details class="tbl" data-for="c-sections"><summary>عرض الجدول</summary></details></div>
+    </div>
+    <div class="card">
+      <h3>المقررات المطروحة بحسب الخطة والبرنامج</h3>
+      <p class="hint">من أصل 155 مقرراً</p>
+      <div class="chart" id="c-plans"></div>
+      <div class="foot"><span class="src">المصدر: 09 - إحصائيات المقررات والشعب المطروحة - جدول (3)</span><details class="tbl" data-for="c-plans"><summary>عرض الجدول</summary></details></div>
+    </div>
+  </div>
+</div></section>
+
+<!-- STAFF -->
+<section id="staff"><div class="wrap">
+  <h2>منسوبو القسم</h2>
+  <p class="sec-lede">94 منسوباً ومنسوبة: 69 من أعضاء هيئة التدريس ومن في حكمهم و25 إدارياً وإدارية. حملة الدكتوراه (أستاذ مساعد فأعلى) 52 عضواً بنسبة 75.4%.</p>
+  <div class="grid g2">
+    <div class="card">
+      <h3>أعضاء هيئة التدريس بحسب الدرجة والجنس</h3>
+      <p class="hint">الإناث 72.5% من أعضاء هيئة التدريس</p>
+      <div class="legend" data-for="c-faculty"></div>
+      <div class="chart" id="c-faculty"></div>
+      <div class="foot"><span class="src">المصدر: 06 - إحصائيات أعضاء هيئة التدريس والإداريين - جدول (1)</span><details class="tbl" data-for="c-faculty"><summary>عرض الجدول</summary></details></div>
+    </div>
+    <div class="card">
+      <h3>الإداريون والعبء التدريسي</h3>
+      <p class="hint">بيانات مجمّعة دون بيانات شخصية</p>
+      <div class="stats">
+        <div class="stat"><b class="num">23</b><span>فني مختبر (12 ذكور، 11 إناث)</span></div>
+        <div class="stat"><b class="num">2</b><span>سكرتارية (1 ذكور، 1 إناث)</span></div>
+        <div class="stat"><b class="num">18.9</b><span>شعبة لكل عضو في شطر الطلاب</span></div>
+        <div class="stat"><b class="num">10.9</b><span>شعبة لكل عضوة في شطر الطالبات</span></div>
+      </div>
+      <div class="foot"><span class="src">المصدر: 06 - إحصائيات أعضاء هيئة التدريس والإداريين - جدول (2) وأبرز المؤشرات</span></div>
+    </div>
+  </div>
+</div></section>
+
+<!-- RESEARCH -->
+<section id="research"><div class="wrap">
+  <h2>البحث العلمي والنشر</h2>
+  <p class="sec-lede">114 بحثاً منشوراً في 1447هـ (+14.0% عن 1446هـ)، منها 37 في مجلات Q1، و94.7% في مجلات مصنفة في JCR.</p>
+  <div class="grid g2">
+    <div class="card span2">
+      <h3>الأبحاث المنشورة بحسب تصنيف المجلة (1445–1447هـ)</h3>
+      <p class="hint">سجل العام 1445هـ جزئي بحسب الملف المصدر</p>
+      <div class="legend" data-for="c-research"></div>
+      <div class="chart" id="c-research"></div>
+      <div class="foot"><span class="src">المصدر: 18 - إحصائيات الإنتاج البحثي والنشر العلمي - جدول (1)</span><details class="tbl" data-for="c-research"><summary>عرض الجدول</summary></details></div>
+    </div>
+  </div>
+  <div class="grid g3" style="margin-top:14px">
+    <div class="card"><h3>مجلات Q1 وQ2</h3><div class="stats"><div class="stat"><b class="num">68.4%</b><span>78 بحثاً في 1447هـ (73.0% في 1446هـ)</span></div></div><div class="foot"><span class="src">المصدر: 18 - إحصائيات الإنتاج البحثي والنشر العلمي - جدول (3)</span></div></div>
+    <div class="card"><h3>عدد المجلات</h3><div class="stats"><div class="stat"><b class="num">80</b><span>مجلة نُشر فيها (83 في 1446هـ)</span></div></div><div class="foot"><span class="src">المصدر: 18 - إحصائيات الإنتاج البحثي والنشر العلمي - جدول (3)</span></div></div>
+    <div class="card"><h3>معدل النشر للعضو</h3><div class="stats"><div class="stat"><b class="num">1.7</b><span>بحث لكل عضو (69 عضواً)، و2.2 لكل حامل دكتوراه (52)</span></div></div><div class="foot"><span class="src">المصدر: 18 - إحصائيات الإنتاج البحثي والنشر العلمي - أبرز المؤشرات</span></div></div>
+  </div>
+</div></section>
+
+<!-- GRADUATES -->
+<section id="graduates"><div class="wrap">
+  <h2>الخريجون ومخرجات البرامج</h2>
+  <p class="sec-lede">251 خريجاً وخريجة (244 بكالوريوس و7 ماجستير)، والخريجات 61.4%. نسبة التخرج في المدة النظامية لدفعة 2022 بلغت 54.0%.</p>
+  <div class="feature">
+    <div class="feature-head"><span class="tag">إنجاز العام</span><h3>تخريج الدفعة الأولى من برنامج بكالوريوس العلوم البيئية</h3><p>تصدّر البرنامج برامج البكالوريوس في القسم من حيث عدد الخريجين، ويُعد تخريج الدفعة الأولى متطلباً للتقدم بطلب الاعتماد البرامجي.</p></div>
+    <div class="feature-stats">
+      <div><b class="num">113</b><span>خريجاً وخريجة</span></div>
+      <div><b class="num">84</b><span>خريجة (74.3%)</span></div>
+      <div><b class="num">29</b><span>خريجاً (25.7%)</span></div>
+      <div><b class="num">46.3%</b><span>من خريجي البكالوريوس</span></div>
+    </div>
+    <span class="src">المصدر: 16 - تخريج الدفعة الأولى من برنامج بكالوريوس العلوم البيئية</span>
+  </div>
+  <div class="grid g2">
+    <div class="card">
+      <h3>خريجو البكالوريوس بحسب البرنامج والجنس</h3>
+      <p class="hint">244 خريجاً وخريجة</p>
+      <div class="legend" data-for="c-grads"></div>
+      <div class="chart" id="c-grads"></div>
+      <div class="foot"><span class="src">المصدر: 15 - إحصائيات الخريجين ومعدلات التخرج والتوظيف - جدول (1)</span><details class="tbl" data-for="c-grads"><summary>عرض الجدول</summary></details></div>
+    </div>
+    <div class="card">
+      <h3>نسبة التخرج في المدة النظامية بحسب دفعة الالتحاق</h3>
+      <p class="hint">برنامجا الأحياء والأحياء الدقيقة</p>
+      <div class="legend" data-for="c-ontime"></div>
+      <div class="chart" id="c-ontime"></div>
+      <div class="foot"><span class="src">المصدر: 15 - إحصائيات الخريجين ومعدلات التخرج والتوظيف - جدول (2)</span><details class="tbl" data-for="c-ontime"><summary>عرض الجدول</summary></details></div>
+    </div>
+    <div class="card span2">
+      <h3>نسب توظيف الخريجين مقارنة بكلية العلوم (2021–2025)</h3>
+      <p class="hint">برنامجا الأحياء والأحياء الدقيقة · بلغت نسبة توظيف القسم 32.8% لخريجي 2025 (آخر سنة متاحة)</p>
+      <div class="legend" data-for="c-employ"></div>
+      <div class="chart" id="c-employ"></div>
+      <div class="foot"><span class="src">المصدر: 15 - إحصائيات الخريجين ومعدلات التخرج والتوظيف - جدول (3)</span><details class="tbl" data-for="c-employ"><summary>عرض الجدول</summary></details></div>
+    </div>
+  </div>
+</div></section>
+
+<!-- POSTGRAD -->
+<section id="postgrad"><div class="wrap">
+  <h2>الدراسات العليا</h2>
+  <p class="sec-lede">يقدّم القسم الماجستير في أربعة تخصصات (علم النبات، علم الحيوان، الأحياء الدقيقة، صحة وسلامة الغذاء) والدكتوراه في علم النبات. تخرّج 43 طالباً وطالبة خلال الأعوام 1445–1447هـ، منهم 7 في العام 1447هـ.</p>
+  <div class="pg-kpis">
+    <div class="kpi"><p class="label">برامج الدراسات العليا</p><p class="value num">5</p><p class="sub">4 ماجستير · 1 دكتوراه</p></div>
+    <div class="kpi"><p class="label">الطلبة المقيدون</p><p class="value num">41</p><p class="sub">وفق بيانات العام 1445هـ · 78.0% طالبات</p></div>
+    <div class="kpi"><p class="label">خريجو العام 1447هـ</p><p class="value num">7</p><p class="sub">4 الأحياء الدقيقة · 3 علم النبات</p></div>
+    <div class="kpi"><p class="label">الطالبات من خريجي 1447هـ</p><p class="value num">85.7<small>%</small></p><p class="sub">6 طالبات وطالب واحد</p></div>
+  </div>
+  <div class="grid g2" style="margin-top:14px">
+    <div class="card">
+      <h3>الطلبة المقيدون بحسب البرنامج والجنس</h3>
+      <p class="hint">بيانات المقيدين في العام 1445هـ كما وردت في المصدر</p>
+      <div class="legend" data-for="c-pg-enrol"></div>
+      <div class="chart" id="c-pg-enrol"></div>
+      <div class="foot"><span class="src">المصدر: 17 - إحصائيات الدراسات العليا - جدول (1)</span><details class="tbl" data-for="c-pg-enrol"><summary>عرض الجدول</summary></details></div>
+    </div>
+    <div class="card">
+      <h3>خريجو الدراسات العليا بحسب عام التخرج والجنس</h3>
+      <p class="hint">43 خريجاً وخريجة، 81.4% منهم طالبات</p>
+      <div class="legend" data-for="c-pg-year"></div>
+      <div class="chart" id="c-pg-year"></div>
+      <div class="foot"><span class="src">المصدر: 17 - إحصائيات الدراسات العليا - جدول (3)</span><details class="tbl" data-for="c-pg-year"><summary>عرض الجدول</summary></details></div>
+    </div>
+    <div class="card span2">
+      <h3>خريجو الدراسات العليا بحسب البرنامج وعام التخرج (1445–1447هـ)</h3>
+      <p class="hint">تصدّر ماجستير الأحياء الدقيقة بـ22 خريجاً وخريجة (51.2%)</p>
+      <div class="legend" data-for="c-pg-prog"></div>
+      <div class="chart" id="c-pg-prog"></div>
+      <div class="foot"><span class="src">المصدر: 17 - إحصائيات الدراسات العليا - جدول (2)</span><details class="tbl" data-for="c-pg-prog"><summary>عرض الجدول</summary></details></div>
+    </div>
+  </div>
+</div></section>
+
+<!-- EXAM -->
+<section id="exam"><div class="wrap">
+  <h2>الاختبار المعياري</h2>
+  <p class="sec-lede">تقدّم 186 من 218 مستهدفاً (85.3%)، والمتوسط المرجّح 70.4% مقابل مستوى مستهدف 60%.</p>
+  <div class="grid g2">
+    <div class="card">
+      <h3>متوسط الدرجة بحسب البرنامج والمسار (%)</h3>
+      <p class="hint">الخط المتقطع هو المستوى المستهدف 60%</p>
+      <div class="legend" data-for="c-exam"></div>
+      <div class="chart" id="c-exam"></div>
+      <div class="foot"><span class="src">المصدر: 14 - إحصائيات الاختبار المعياري - جدول (2)</span><details class="tbl" data-for="c-exam"><summary>عرض الجدول</summary></details></div>
+    </div>
+    <div class="card">
+      <h3>نسبة المشاركة في الاختبار (%)</h3>
+      <p class="hint">المختبَرون من المستهدفين</p>
+      <div class="chart" id="c-part"></div>
+      <div class="foot"><span class="src">المصدر: 14 - إحصائيات الاختبار المعياري - جدول (1)</span><details class="tbl" data-for="c-part"><summary>عرض الجدول</summary></details></div>
+    </div>
+  </div>
+</div></section>
+
+<!-- SURVEYS -->
+<section id="surveys"><div class="wrap">
+  <h2>رضا المستفيدين</h2>
+  <p class="sec-lede">رضا الطلبة عن المقررات 4.30 من 5 (9608 استجابة على 89 مقرراً)، والرضا الوظيفي لأعضاء هيئة التدريس 4.43. الاستبانات طُبقت في الفصل الدراسي الثاني (472).</p>
+  <div class="grid g2">
+    <div class="card span2">
+      <h3>متوسطات استبانات الطلبة بحسب الشطر (من 5)</h3>
+      <p class="hint">مرتبة حسب المتوسط العام كما في المصدر</p>
+      <div class="legend" data-for="c-surv"></div>
+      <div class="chart" id="c-surv"></div>
+      <div class="foot"><span class="src">المصدر: 22 - نتائج استطلاعات آراء الطلبة وأعضاء هيئة التدريس - جدول (4)</span><details class="tbl" data-for="c-surv"><summary>عرض الجدول</summary></details></div>
+    </div>
+    <div class="card">
+      <h3>تقييم المقررات</h3>
+      <div class="stats">
+        <div class="stat"><b class="num">4.30</b><span>المتوسط العام من 5</span></div>
+        <div class="stat"><b class="num">80%</b><span>تقييمات بدرجة 4 أو 5</span></div>
+        <div class="stat"><b class="num">32</b><span>مقرراً متوسطها 4.5 فأعلى</span></div>
+        <div class="stat"><b class="num">14</b><span>مقرراً متوسطها أقل من 4</span></div>
+      </div>
+      <div class="foot"><span class="src">المصدر: 22 - نتائج استطلاعات آراء الطلبة وأعضاء هيئة التدريس - جدول (1)</span></div>
+    </div>
+    <div class="card">
+      <h3>استبانات أعضاء هيئة التدريس</h3>
+      <ul class="list">
+        <li><span>الرضا الوظيفي (29 بنداً)</span><span class="num">4.43</span></li>
+        <li><span>مصادر التعلم (30 بنداً)</span><span class="num">4.07</span></li>
+        <li><span>كفاءة الأجهزة وتجهيزات المعامل (بند)</span><span class="num">3.00</span></li>
+      </ul>
+      <div class="foot"><span class="src">المصدر: 22 - نتائج استطلاعات آراء الطلبة وأعضاء هيئة التدريس - جدول (5)</span></div>
+    </div>
+  </div>
+</div></section>
+
+<!-- ACTIVITIES -->
+<section id="activities"><div class="wrap">
+  <h2>الأنشطة والإنجازات</h2>
+  <p class="sec-lede">مجلس القسم والتدريب التعاوني ومشاريع التخرج والدورات والفعاليات والإنجازات خلال العام.</p>
+  <div class="grid g3">
+    <div class="card">
+      <h3>مجلس القسم</h3>
+      <div class="stats">
+        <div class="stat"><b class="num">12</b><span>جلسة</span></div>
+        <div class="stat"><b class="num">198</b><span>موضوعاً</span></div>
+        <div class="stat"><b class="num">75.59%</b><span>نسبة الحضور</span></div>
+      </div>
+      <p class="hint" style="margin-top:10px">152 موضوعاً (76.77%) عن بدل التميز البحثي.</p>
+      <div class="foot"><span class="src">المصدر: 07 - إحصائيات أعمال مجلس القسم - جدولا (1) و(2)</span></div>
+    </div>
+    <div class="card">
+      <h3>التدريب التعاوني</h3>
+      <div class="stats">
+        <div class="stat"><b class="num">93</b><span>متدرباً ومتدربة (84 طالبة، 9 طلاب)</span></div>
+        <div class="stat"><b class="num">21</b><span>جهة تدريب</span></div>
+        <div class="stat"><b class="num">6</b><span>مدن ومحافظات</span></div>
+      </div>
+      <div class="foot"><span class="src">المصدر: 12 - إحصائيات التدريب التعاوني</span></div>
+    </div>
+    <div class="card">
+      <h3>الإنجازات والجوائز</h3>
+      <ul class="list">
+        <li><span>براءات اختراع مسجلة</span><span class="num">2</span></li>
+        <li><span>جائزة التميز على مستوى الجامعة</span><span class="num">1</span></li>
+        <li><span>ميدالية في معرض دولي (إشراف وتأهيل)</span><span class="num">1</span></li>
+        <li><span>فرق فائزة في قمم الإنجاز (18 طالباً وطالبة)</span><span class="num">6</span></li>
+      </ul>
+      <div class="foot"><span class="src">المصدر: 19 - الجوائز وبراءات الاختراع - جدول (1)</span></div>
+    </div>
+    <div class="card span2">
+      <h3>مشاريع التخرج بحسب المجال البحثي</h3>
+      <p class="hint">61 مشروعاً شارك فيها 208 طلاب وطالبات</p>
+      <div class="chart" id="c-proj"></div>
+      <div class="foot"><span class="src">المصدر: 13 - مشاريع التخرج</span><details class="tbl" data-for="c-proj"><summary>عرض الجدول</summary></details></div>
+    </div>
+    <div class="card">
+      <h3>الدورات والفعاليات</h3>
+      <ul class="list">
+        <li><span>دورات وورش عمل</span><span class="num">10</span></li>
+        <li><span>منها في البحث العلمي والنشر</span><span class="num">6</span></li>
+        <li><span>فعاليات علمية وتوعوية</span><span class="num">6</span></li>
+        <li><span>منها في التوعية الصحية</span><span class="num">3</span></li>
+        <li><span>منها في البيئة والاستدامة</span><span class="num">2</span></li>
+      </ul>
+      <div class="foot"><span class="src">المصدر: 20 - الدورات وورش العمل، 21 - الفعاليات والأنشطة اللاصفية</span></div>
+    </div>
+    <div class="card" style="grid-column:1/-1">
+      <h3>الفعاليات العلمية والتوعوية: عدد المستفيدات</h3>
+      <p class="hint">6 فعاليات · مرّر المؤشر لعرض نتائج تقييم كل فعالية</p>
+      <div class="chart" id="c-events"></div>
+      <div class="foot"><span class="src">المصدر: 21 - الفعاليات والأنشطة اللاصفية - الجداول (2)–(8)</span><details class="tbl" data-for="c-events"><summary>عرض الجدول</summary></details></div>
+    </div>
+  </div>
+</div></section>
+
+<!-- SOURCES -->
+<section id="sources"><div class="wrap">
+  <div class="card">
+    <h3>ملفات المصادر</h3>
+    <p class="hint">أجزاء التقرير السنوي للعام الجامعي 1447هـ</p>
+    <ul class="sources">
+      <li>06 - إحصائيات أعضاء هيئة التدريس والإداريين والإداريات</li>
+      <li>07 - إحصائيات أعمال مجلس القسم</li>
+      <li>08 - إحصائيات الطلبة المسجلين في برامج القسم</li>
+      <li>09 - إحصائيات المقررات والشعب المطروحة</li>
+      <li>10 - إحصائية تقديرات الطلاب والطالبات</li>
+      <li>12 - إحصائيات التدريب التعاوني</li>
+      <li>13 - مشاريع التخرج: الإحصاءات والمجالات البحثية</li>
+      <li>14 - إحصائيات الاختبار المعياري</li>
+      <li>15 - إحصائيات الخريجين ومعدلات التخرج والتوظيف</li>
+      <li>16 - تخريج الدفعة الأولى من برنامج بكالوريوس العلوم البيئية</li>
+      <li>17 - إحصائيات الدراسات العليا</li>
+      <li>18 - إحصائيات الإنتاج البحثي والنشر العلمي لمنسوبي القسم</li>
+      <li>19 - الجوائز وبراءات الاختراع</li>
+      <li>20 - إحصائيات الدورات وورش العمل</li>
+      <li>21 - الفعاليات والأنشطة اللاصفية</li>
+      <li>22 - نتائج استطلاعات آراء الطلبة وأعضاء هيئة التدريس</li>
+    </ul>
+  </div>
+</div></section>
+
+<footer><div class="wrap">قسم الأحياء · جامعة أم القرى · التقرير السنوي للعام الجامعي 1447هـ</div></footer>
+<div id="tip" role="status" aria-live="polite"></div>
+
+<script>
+(function(){
+"use strict";
+const NS="http://www.w3.org/2000/svg";
+const S1="var(--s1)",S2="var(--s2)",S3="var(--s3)";
+const fmt=(v,u)=> (v==null?"—":(u==="%"?v.toFixed(1)+"%":u==="tick%"?v+"%":u==="5"?v.toFixed(2):v.toLocaleString("en-US")));
+
+/* ---------- KPI tiles ---------- */
+const KPIS=[
+  {l:"الطلبة المسجلون",v:"1,190",s:'<span class="delta">+31.6%</span> عن العام السابق · 433 مستجداً',src:"08 - إحصائيات الطلبة المسجلين"},
+  {l:"الخريجون",v:"251",s:"244 بكالوريوس · 7 ماجستير",src:"15 - إحصائيات الخريجين ومعدلات التخرج والتوظيف"},
+  {l:"نسبة النجاح العامة",v:"95.0<small>%</small>",s:"من 9,662 مقعداً دراسياً",src:"10 - إحصائية تقديرات الطلاب والطالبات"},
+  {l:"الأبحاث المنشورة",v:"114",s:'<span class="delta">+14.0%</span> · 37 في مجلات Q1',src:"18 - إحصائيات الإنتاج البحثي والنشر العلمي"},
+  {l:"أعضاء هيئة التدريس",v:"69",s:"ومن في حكمهم · 75.4% حملة دكتوراه",src:"06 - إحصائيات أعضاء هيئة التدريس والإداريين"},
+  {l:"الشعب المطروحة",v:"902",s:"في 155 مقرراً خلال ثلاثة فصول",src:"09 - إحصائيات المقررات والشعب المطروحة"},
+  {l:"متوسط الاختبار المعياري",v:"70.4<small>%</small>",s:"المستهدف 60% · مشاركة 85.3%",src:"14 - إحصائيات الاختبار المعياري"},
+  {l:"رضا الطلبة عن المقررات",v:"4.30<small> من 5</small>",s:"9,608 استجابة · 89 مقرراً",src:"22 - نتائج استطلاعات آراء الطلبة وأعضاء هيئة التدريس"}
+];
+document.getElementById("kpis").innerHTML=KPIS.map(k=>`<div class="kpi"><p class="label">${k.l}</p><p class="value num">${k.v}</p><p class="sub">${k.s}</p><span class="src">المصدر: ${k.src}</span></div>`).join("");
+
+/* ---------- data (verbatim from source files) ---------- */
+const D={
+  "c-enrol":{type:"line",unit:"n",cats:["2021","2022","2023","2024","2025","2026"],
+    series:[{name:"إجمالي المسجلين",c:S1,v:[1500,1647,1576,1205,904,1190]},{name:"المستجدون",c:S2,v:[438,387,344,189,268,433]}],
+    extra:{name:"المنسحبون",v:[32,29,49,28,28,55]},min:0,max:1800,label:"last"},
+  "c-prog":{type:"hbar",unit:"n",cats:["علوم بيئية","أحياء حيوان","الأحياء الدقيقة","الأحياء (عام)","أحياء نبات"],
+    series:[{name:"طالبات",c:S1,v:[142,113,null,24,9]},{name:"طلاب",c:S2,v:[46,9,55,10,4]}],stack:true},
+  "c-status":{type:"hbar",unit:"n",cats:["منتظم","منسحب كلياً","مطوي / ملغي قيده","معتذر","مؤجل"],
+    series:[{name:"طالبات",c:S1,v:[288,37,20,3,3]},{name:"طلاب",c:S2,v:[124,38,7,3,1]}],stack:true},
+  "c-pass":{type:"vbar",unit:"%",cats:["الأول","الثاني","الصيفي","إجمالي العام"],
+    series:[{name:"طالبات",c:S1,v:[98.1,98.3,97.8,98.2]},{name:"طلاب",c:S2,v:[90.3,89.0,88.0,89.6]}],min:80,max:100,labels:true},
+  "c-grades":{type:"vbar",unit:"%",cats:["أ+","أ","ب+","ب","ج+","ج","د+","د","ند","هـ","هد","ح"],
+    series:[{name:"طالبات",c:S1,v:[28.8,16.6,13.9,11.7,9.0,6.8,4.2,5.1,2.3,1.5,0.0,0.3]},{name:"طلاب",c:S2,v:[12.9,12.0,9.9,9.6,10.0,10.0,8.1,12.0,5.1,6.9,0.3,3.2]}],min:0,max:30,
+    note:"ند: ناجح دون درجة · هـ: راسب · هد: راسب دون درجة · ح: محروم"},
+  "c-sections":{type:"vbar",unit:"n",cats:["الأول","الثاني","الصيفي"],
+    series:[{name:"شطر الطالبات",c:S1,v:[248,262,33]},{name:"شطر الطلاب",c:S2,v:[156,159,44]}],min:0,max:300,labels:true},
+  "c-plans":{type:"hbar",unit:"n",cats:["الأحياء المطورة (BIO)","الأحياء الدقيقة (BIOM)","الخطة السابقة (401)","العلوم البيئية (BIOE)","رموز أخرى"],
+    series:[{name:"عدد المقررات",c:S1,v:[58,32,34,27,4]}],sortNo:true},
+  "c-faculty":{type:"vbar",unit:"n",cats:["أستاذ","أستاذ مشارك","أستاذ مساعد","محاضر","معيد"],
+    series:[{name:"إناث",c:S1,v:[0,10,25,14,1]},{name:"ذكور",c:S2,v:[2,7,8,0,2]}],stack:true,min:0,max:35,labels:true},
+  "c-research":{type:"vbar",unit:"n",cats:["1445هـ","1446هـ","1447هـ"],
+    series:[{name:"Q1",c:"var(--q1)",v:[12,23,37]},{name:"Q2",c:"var(--q2)",v:[14,50,41]},{name:"Q3",c:"var(--q3)",v:[5,6,21]},{name:"Q4",c:"var(--q4)",v:[4,4,9]},{name:"مجلات محكمة غير مصنفة",c:"var(--q5)",v:[7,17,6]}],
+    stack:true,min:0,max:120,labels:true,totals:[42,100,114],rtl:false},
+  "c-grads":{type:"hbar",unit:"n",cats:["العلوم البيئية","الأحياء","الأحياء الدقيقة","الأحياء (أحياء حيوان)","الأحياء (أحياء نبات)"],
+    series:[{name:"خريجات",c:S1,v:[84,33,null,29,2]},{name:"خريجون",c:S2,v:[29,35,32,null,null]}],stack:true},
+  "c-ontime":{type:"line",unit:"%",cats:["2016","2017","2018","2019","2020","2021","2022"],
+    series:[{name:"برنامج الأحياء",c:S1,v:[36.0,37.7,42.5,45.7,65.7,37.1,78.5]},{name:"برنامج الأحياء الدقيقة",c:S2,v:[24.1,16.1,31.7,47.5,58.5,16.7,30.5]}],
+    extra:{name:"إجمالي القسم",v:[34.7,35.3,40.9,46.0,64.5,35.8,54.0]},min:0,max:100,label:"last"},
+  "c-employ":{type:"line",unit:"%",cats:["2021","2022","2023","2024","2025"],
+    series:[{name:"خريجو الأحياء",c:S1,v:[52.7,50.0,36.1,33.7,29.0]},{name:"خريجو الأحياء الدقيقة",c:S2,v:[66.7,74.5,59.7,50.0,51.6]},{name:"كلية العلوم",c:S3,v:[48.8,52.4,42.2,39.4,28.4]}],
+    extra:{name:"القسم (البرنامجان معاً)",v:[53.9,53.4,39.4,36.2,32.8]},min:0,max:80,label:"last"},
+  "c-exam":{type:"vbar",unit:"%",cats:["علم الحيوان","علم النبات","العلوم البيئية","الأحياء الدقيقة"],
+    series:[{name:"متوسط الدرجة",c:S1,v:[78.9,74.6,68.8,59.5]}],min:0,max:100,labels:true,target:60,
+    tbl:{head:["البرنامج / المسار","المتوسط (من 90)","المتوسط %","الوسيط","أعلى","أدنى","الانحراف المعياري"],
+      rows:[["الأحياء – علم الحيوان","71.05","78.9%","72","89","48","14.91"],["الأحياء – علم النبات","67.13","74.6%","75.5","88","37","20.85"],["العلوم البيئية","61.91","68.8%","68","90","0","21.65"],["الأحياء الدقيقة","53.58","59.5%","56","75","31","12.15"],["المتوسط المرجّح","63.35","70.4%","—","—","—","—"]]}},
+  "c-part":{type:"hbar",unit:"%",cats:["العلوم البيئية (117 من 124)","علم النبات (8 من 9)","علم الحيوان (42 من 55)","الأحياء الدقيقة (19 من 30)"],
+    series:[{name:"نسبة المشاركة",c:S1,v:[94.4,88.9,76.4,63.3]}],max:100},
+  "c-surv":{type:"hbar",unit:"5",cats:["مصادر التعلم","تقييم البرنامج","رسالة الجامعة","رسالة البرنامج وأهدافه","خبرة الطلبة","التسجيل والإرشاد الأكاديمي","المرافق والتجهيزات","رسالة الكلية","الخدمات الإلكترونية","الخدمات والأنشطة الطلابية"],
+    series:[{name:"الطالبات",c:S1,v:[4.14,3.51,3.88,3.93,3.06,3.41,3.46,3.71,3.23,3.91]},{name:"الطلاب",c:S2,v:[4.53,4.64,4.42,4.34,4.87,4.44,4.01,4.02,4.50,3.17]}],
+    extra:{name:"المتوسط العام",v:[4.35,4.26,4.26,4.23,4.22,3.93,3.89,3.85,3.83,3.46]},min:0,max:5,target:4,targetName:"مستوى الرضا المرتفع (4)"},
+  "c-pg-enrol":{type:"hbar",unit:"n",cats:["ماجستير الأحياء الدقيقة","ماجستير علم النبات","ماجستير صحة وسلامة الغذاء","ماجستير علم الحيوان","دكتوراه علم النبات"],
+    series:[{name:"طالبات",c:S1,v:[13,12,5,1,1]},{name:"طلاب",c:S2,v:[8,1,null,null,null]}],stack:true},
+  "c-pg-year":{type:"vbar",unit:"n",cats:["1445هـ","1446هـ","1447هـ"],rtl:false,
+    series:[{name:"طالبات",c:S1,v:[8,21,6]},{name:"طلاب",c:S2,v:[3,4,1]}],stack:true,min:0,max:30,labels:true},
+  "c-pg-prog":{type:"hbar",unit:"n",cats:["ماجستير الأحياء الدقيقة","ماجستير علم النبات","ماجستير صحة وسلامة الغذاء","ماجستير علم الحيوان","دكتوراه علم النبات"],
+    series:[{name:"1445هـ",c:S3,v:[8,1,null,1,1]},{name:"1446هـ",c:S1,v:[10,10,5,null,null]},{name:"1447هـ",c:S2,v:[4,3,null,null,null]}],stack:true},
+  "c-events":{type:"hbar",unit:"n",cats:["معاً لحماية الحياة الفطرية","الغذاء العضوي أسلوب حياة","أمراض الدم الوراثية","التوعية بسرطان الثدي","اليوم العالمي لمتلازمة داون","علم النبات الجنائي"],
+    series:[{name:"عدد المستفيدات",c:S1,v:[130,130,99,95,88,75]}],
+    extras:[{name:"التاريخ",v:["27 أكتوبر 2025","11 نوفمبر 2025","2 نوفمبر 2025","28 أكتوبر 2025","16 ديسمبر 2025","3 مايو 2026"]},{name:"المشاركات في التقييم",v:[55,25,43,45,48,38]},{name:"التقييم العام",v:["98%","100%","94%","100%","85.6%","95.8%"]},{name:"المجال",v:["البيئة والاستدامة","البيئة والاستدامة","التوعية الصحية","التوعية الصحية","التوعية الصحية","علمي تعليمي"]}]},
+  "c-proj":{type:"hbar",unit:"n",cats:["البيئة","الصحة","التقنية الحيوية","الطاقة الحيوية المتجددة والاستدامة","فسيولوجيا النبات","الأحياء الجزيئية","الوراثة","الاقتصاد والزراعة","الزراعة والذكاء الاصطناعي","علم الحيوان","مشاريع غير مصنّفة"],
+    series:[{name:"عدد المشاريع",c:S1,v:[15,12,12,7,3,2,2,1,1,1,5]}],extra:{name:"عدد الطلبة",v:[61,47,34,19,12,8,8,2,4,3,10]}}
+};
+
+/* research uses an ordinal teal ramp (stack of ordered quartiles) + neutral for unclassified */
+document.documentElement.style.setProperty("--q1","#0b5f6b");
+const rs=document.createElement("style");
+rs.textContent=`:root{--q1:#0b5f6b;--q2:#2b8f9c;--q3:#62b4be;--q4:#9fd1d6;--q5:#b9b4a6}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){--q1:#9fd6dc;--q2:#5fb3bd;--q3:#2e8d99;--q4:#1a6670;--q5:#6f6a5e}}
+:root[data-theme="dark"]{--q1:#9fd6dc;--q2:#5fb3bd;--q3:#2e8d99;--q4:#1a6670;--q5:#6f6a5e}`;
+document.head.appendChild(rs);
+
+/* ---------- helpers ---------- */
+function el(tag,attrs,parent){const e=document.createElementNS(NS,tag);for(const k in attrs)e.setAttribute(k,attrs[k]);if(parent)parent.appendChild(e);return e}
+function txt(parent,x,y,s,attrs){const t=el("text",Object.assign({x,y},attrs||{}),parent);t.textContent=s;return t}
+function niceTicks(min,max,n){const span=max-min;const raw=span/n;const p=Math.pow(10,Math.floor(Math.log10(raw)));const m=raw/p;const step=(m<=1?1:m<=2?2:m<=2.5?2.5:m<=5?5:10)*p;const out=[];for(let v=Math.ceil(min/step)*step;v<=max+1e-9;v+=step)out.push(+v.toFixed(6));return out}
+function barPath(x,y,w,h,r,dir){ // rounded only at the data end. dir: up|left
+  if(h<=0||w<=0)return"";r=Math.min(r,dir==="up"?w/2:h/2,dir==="up"?h:w);
+  if(dir==="up")return`M${x},${y+h}V${y+r}Q${x},${y} ${x+r},${y}H${x+w-r}Q${x+w},${y} ${x+w},${y+r}V${y+h}Z`;
+  return`M${x+w},${y}H${x+r}Q${x},${y} ${x},${y+r}V${y+h-r}Q${x},${y+h} ${x+r},${y+h}H${x+w}Z`;
+}
+const tip=document.getElementById("tip");
+function showTip(html,ev){tip.innerHTML=html;tip.classList.add("on");moveTip(ev)}
+function moveTip(ev){const pad=14,r=tip.getBoundingClientRect();let x=ev.clientX-r.width-pad,y=ev.clientY-r.height-pad;if(x<8)x=ev.clientX+pad;if(y<8)y=ev.clientY+pad;tip.style.left=x+"px";tip.style.top=y+"px"}
+function hideTip(){tip.classList.remove("on")}
+function tipRows(title,rows){return`<div style="font-weight:600;margin-bottom:2px">${title}</div>`+rows.map(r=>`<div class="row"><span>${r.c?`<i style="background:${r.c}"></i>`:""}${r.n}</span><b class="num">${r.v}</b></div>`).join("")}
+function bindHover(node,html,group){
+  node.addEventListener("pointerenter",e=>{showTip(html,e);(group||[node]).forEach(g=>g.classList.add("hot"))});
+  node.addEventListener("pointermove",moveTip);
+  node.addEventListener("pointerleave",()=>{hideTip();(group||[node]).forEach(g=>g.classList.remove("hot"))});
+}
+
+/* ---------- vertical bars (grouped or stacked) ---------- */
+function vbar(root,d){
+  const W=Math.max(root.clientWidth,280),narrow=W<480;
+  const H=d.cats.length>8?260:240,m={t:d.labels?22:12,r:8,b:narrow&&d.cats.length>6?40:30,l:38};
+  const svg=el("svg",{viewBox:`0 0 ${W} ${H}`,role:"img"},root);
+  const iw=W-m.l-m.r,ih=H-m.t-m.b,min=d.min||0,max=d.max;
+  const y=v=>m.t+ih-(Math.max(v,min)-min)/(max-min)*ih;
+  niceTicks(min,max,4).forEach(t=>{el("line",{x1:m.l,x2:W-m.r,y1:y(t),y2:y(t),stroke:"var(--grid)"},svg);txt(svg,m.l-6,y(t)+4,fmt(t,d.unit==="%"?"tick%":"n"),{"text-anchor":"end",class:"axis-label"})});
+  const band=iw/d.cats.length,ns=d.series.length;
+  const gw=Math.min(band*0.72,d.stack?46:ns*34),bw=d.stack?gw:(gw-(ns-1)*2)/ns;
+  d.cats.forEach((c,i)=>{
+    const pos=d.rtl===false?i:d.cats.length-1-i;const cx=m.l+band*pos+band/2;let acc=0;const nodes=[];
+    d.series.forEach((s,j)=>{
+      const v=s.v[i];if(v==null||v===0&&d.stack)return;
+      let x,yy,h;
+      if(d.stack){x=cx-gw/2;const y0=y(min+acc),y1=y(min+acc+v);yy=y1;h=y0-y1-(acc>0?0:0);acc+=v;}
+      else{x=cx-gw/2+j*(bw+2);yy=y(v);h=y(min)-yy;}
+      const top=d.stack?j===lastNonZero(d.series,i):true;
+      const p=el("path",{d:top?barPath(x,yy,bw,Math.max(h-(d.stack&&acc!==v?2:0),0.5),4,"up"):`M${x},${yy}h${bw}v${Math.max(h-2,0.5)}h${-bw}Z`,fill:s.c,class:"bar"},svg);
+      if(d.stack&&acc!==v){p.setAttribute("transform","translate(0,0)")}
+      nodes.push(p);
+      if(d.labels&&!d.stack)txt(svg,x+bw/2,yy-5,fmt(v,d.unit),{"text-anchor":"middle",class:"val"});
+    });
+    if(d.stack&&d.labels){const tot=d.totals?d.totals[i]:acc;txt(svg,cx,y(min+acc)-6,fmt(tot,"n"),{"text-anchor":"middle",class:"val"})}
+    const lab=txt(svg,cx,H-m.b+16,c,{"text-anchor":"middle",direction:"rtl","unicode-bidi":"embed"});
+    if(narrow&&d.cats.length>6)lab.setAttribute("font-size","10.5");
+    const hit=el("rect",{x:m.l+band*pos,y:m.t,width:band,height:ih,class:"hit"},svg);
+    const rows=d.series.map(s=>({n:s.name,c:s.c,v:fmt(s.v[i],d.unit)}));
+    if(d.stack)rows.push({n:"المجموع",v:fmt(d.totals?d.totals[i]:d.series.reduce((a,s)=>a+(s.v[i]||0),0),"n")});
+    bindHover(hit,tipRows(c,rows),nodes);
+  });
+  if(d.target!=null){const ty=y(d.target);el("line",{x1:m.l,x2:W-m.r,y1:ty,y2:ty,stroke:"var(--target)","stroke-width":1.5,"stroke-dasharray":"5 4"},svg)}
+  if(d.note){const n=document.createElement("p");n.className="hint";n.style.margin="6px 0 0";n.textContent=d.note;root.appendChild(n)}
+}
+function lastNonZero(series,i){let k=-1;series.forEach((s,j)=>{if(s.v[i])k=j});return k}
+
+/* ---------- horizontal bars, RTL: labels on the right, bars grow leftward ---------- */
+function hbar(root,d){
+  const W=Math.max(root.clientWidth,280),narrow=W<520;
+  const ns=d.stack?1:d.series.length,rowH=ns>1?30:24,gap=ns>1?12:8;
+  const labW=Math.min(narrow?150:200,W*0.45);
+  const m={t:6,r:labW,b:8,l:44};
+  const H=m.t+m.b+d.cats.length*(rowH+gap);
+  const svg=el("svg",{viewBox:`0 0 ${W} ${H}`,role:"img"},root);
+  const iw=W-m.l-m.r,min=d.min||0;
+  const totals=d.cats.map((_,i)=>d.stack?d.series.reduce((a,s)=>a+(s.v[i]||0),0):Math.max(...d.series.map(s=>s.v[i]||0)));
+  const max=d.max||Math.ceil(Math.max(...totals)*1.08);
+  const xw=v=>(v-min)/(max-min)*iw, x0=W-m.r;
+  if(d.target!=null){const tx=x0-xw(d.target);el("line",{x1:tx,x2:tx,y1:m.t-2,y2:H-m.b,stroke:"var(--target)","stroke-width":1.5,"stroke-dasharray":"5 4"},svg)}
+  d.cats.forEach((c,i)=>{
+    const yTop=m.t+i*(rowH+gap);let acc=0;const nodes=[];
+    const bh=d.stack?rowH:(rowH-(ns-1)*2)/ns;
+    d.series.forEach((s,j)=>{
+      const v=s.v[i];if(v==null||v===0)return;
+      const w=xw(v)-(d.stack&&acc>0?2:0);
+      const yy=d.stack?yTop:yTop+j*(bh+2);
+      const xx=x0-xw(acc)-xw(v)-(d.stack&&acc>0?0:0);
+      const isEnd=!d.stack||j===lastNonZero(d.series,i);
+      const p=el("path",{d:isEnd?barPath(xx,yy,Math.max(w,0.5),bh,4,"left"):`M${xx},${yy}h${Math.max(w,0.5)}v${bh}h${-Math.max(w,0.5)}Z`,fill:s.c,class:"bar"},svg);
+      nodes.push(p);
+      if(d.stack)acc+=v;
+      else txt(svg,xx-5,yy+bh/2+4,fmt(v,d.unit),{"text-anchor":"end",class:"val"});
+    });
+    if(d.stack)txt(svg,x0-xw(acc)-5,yTop+rowH/2+4,fmt(acc,d.unit),{"text-anchor":"end",class:"val"});
+    const lt=txt(svg,W-4,yTop+rowH/2+4,c,{"text-anchor":"end"});
+    const hit=el("rect",{x:0,y:yTop-gap/2,width:W,height:rowH+gap,class:"hit"},svg);
+    const rows=d.series.map(s=>({n:s.name,c:s.c,v:fmt(s.v[i],d.unit)}));
+    if(d.extra)rows.push({n:d.extra.name,v:fmt(d.extra.v[i],d.unit)});
+    if(d.extras)d.extras.forEach(e=>rows.push({n:e.name,v:typeof e.v[i]==="number"?fmt(e.v[i],"n"):e.v[i]}));
+    if(d.stack&&d.series.length>1)rows.push({n:"المجموع",v:fmt(acc,d.unit)});
+    bindHover(hit,tipRows(c,rows),nodes);
+  });
+}
+
+/* ---------- line chart with crosshair ---------- */
+function line(root,d){
+  const W=Math.max(root.clientWidth,280),H=250,m={t:14,r:narrowR(W,d),b:28,l:40};
+  const svg=el("svg",{viewBox:`0 0 ${W} ${H}`,role:"img"},root);
+  const iw=W-m.l-m.r,ih=H-m.t-m.b,min=d.min,max=d.max,n=d.cats.length;
+  const x=i=>m.l+(n===1?iw/2:i*iw/(n-1)),y=v=>m.t+ih-(v-min)/(max-min)*ih;
+  niceTicks(min,max,4).forEach(t=>{el("line",{x1:m.l,x2:W-m.r,y1:y(t),y2:y(t),stroke:"var(--grid)"},svg);txt(svg,m.l-6,y(t)+4,fmt(t,d.unit==="%"?"tick%":"n"),{"text-anchor":"end",class:"axis-label"})});
+  d.cats.forEach((c,i)=>txt(svg,x(i),H-8,c,{"text-anchor":"middle"}));
+  const cross=el("line",{x1:0,x2:0,y1:m.t,y2:m.t+ih,stroke:"var(--ink-3)","stroke-width":1,opacity:0},svg);
+  const dots=[];
+  d.series.forEach(s=>{
+    el("path",{d:s.v.map((v,i)=>(i?"L":"M")+x(i)+","+y(v)).join(""),fill:"none",stroke:s.c,"stroke-width":2,"stroke-linejoin":"round","stroke-linecap":"round"},svg);
+    const ds=s.v.map((v,i)=>el("circle",{cx:x(i),cy:y(v),r:i===n-1?4.5:3,fill:s.c,stroke:"var(--surface)","stroke-width":2},svg));
+    dots.push(ds);
+  });
+  // direct labels on last point, de-collided
+  const ends=d.series.map(s=>({s,y:y(s.v[n-1])})).sort((a,b)=>a.y-b.y);
+  for(let k=1;k<ends.length;k++)if(ends[k].y-ends[k-1].y<15)ends[k].y=ends[k-1].y+15;
+  ends.forEach(e=>txt(svg,x(n-1)+8,e.y+4,fmt(e.s.v[n-1],d.unit),{"text-anchor":"start",class:"val"}));
+  for(let i=0;i<n;i++){
+    const w=iw/(n-1||1);
+    const hit=el("rect",{x:x(i)-w/2,y:m.t,width:w,height:ih,class:"hit"},svg);
+    const rows=d.series.map(s=>({n:s.name,c:s.c,v:fmt(s.v[i],d.unit)}));
+    if(d.extra)rows.push({n:d.extra.name,v:fmt(d.extra.v[i],d.unit)});
+    hit.addEventListener("pointerenter",e=>{cross.setAttribute("x1",x(i));cross.setAttribute("x2",x(i));cross.setAttribute("opacity",.5);dots.forEach(ds=>ds[i].setAttribute("r",5));showTip(tipRows(d.cats[i],rows),e)});
+    hit.addEventListener("pointermove",moveTip);
+    hit.addEventListener("pointerleave",()=>{cross.setAttribute("opacity",0);dots.forEach(ds=>ds[i].setAttribute("r",i===n-1?4.5:3));hideTip()});
+  }
+}
+function narrowR(W,d){return 48}
+
+/* ---------- legends & tables ---------- */
+function legend(id,d){
+  const L=document.querySelector(`.legend[data-for="${id}"]`);if(!L)return;
+  L.innerHTML=d.series.map(s=>`<span><i style="background:${s.c}"></i>${s.name}</span>`).join("")+(d.target!=null?`<span class="tgt"><i></i>${d.targetName||"المستوى المستهدف ("+d.target+"%)"}</span>`:"");
+}
+function table(id,d){
+  const det=document.querySelector(`details.tbl[data-for="${id}"]`);if(!det)return;
+  let head,rows;
+  if(d.tbl){head=d.tbl.head;rows=d.tbl.rows}
+  else{
+    head=["البند",...d.series.map(s=>s.name)];if(d.extra)head.push(d.extra.name);if(d.extras)d.extras.forEach(e=>head.push(e.name));if(d.stack&&d.series.length>1)head.push("المجموع");
+    rows=d.cats.map((c,i)=>{const r=[c,...d.series.map(s=>fmt(s.v[i],d.unit))];if(d.extra)r.push(fmt(d.extra.v[i],d.unit));if(d.extras)d.extras.forEach(e=>r.push(typeof e.v[i]==="number"?fmt(e.v[i],"n"):e.v[i]));if(d.stack&&d.series.length>1)r.push(fmt(d.totals?d.totals[i]:d.series.reduce((a,s)=>a+(s.v[i]||0),0),"n"));return r});
+  }
+  const w=document.createElement("div");w.className="tw";
+  w.innerHTML=`<table><thead><tr>${head.map(h=>`<th>${h}</th>`).join("")}</tr></thead><tbody>${rows.map(r=>`<tr>${r.map(c=>`<td class="num">${c}</td>`).join("")}</tr>`).join("")}</tbody></table>`;
+  det.appendChild(w);
+}
+const R={vbar,hbar,line};
+function renderAll(){for(const id in D){const root=document.getElementById(id);if(!root)continue;root.innerHTML="";R[D[id].type](root,D[id])}}
+for(const id in D){legend(id,D[id]);table(id,D[id])}
+renderAll();
+let rt,lw=innerWidth;addEventListener("resize",()=>{if(innerWidth===lw)return;lw=innerWidth;clearTimeout(rt);rt=setTimeout(renderAll,120)});
+})();
+</script>
+</body>
+</html>
